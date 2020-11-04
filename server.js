@@ -1,50 +1,58 @@
 const express = require("express");
-const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 const cors = require("cors");
-const path = require("path");
-const config = require("config");
-const morgan = require("morgan");
+const nodemailer = require("nodemailer");
 
 const app = express();
 
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(cors());
-app.use(morgan("dev"));
 
-//DB Config
-
-const db = config.get("mongoURI");
-
-//Connect to Mongo
-mongoose.connect(db, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
+app.get("/", () => {
+  console.log("welcome to my form");
 });
 
-const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("MongoDB database connection established sucessfully!!");
-});
-
-// Use Routes
-//app.use("/api/items", require("./routes/api/items"));
-app.use("/api/users", require("./routes/api/users"));
-app.use("/api/auth", require("./routes/api/auth"));
-app.use("/api/fatLogs", require("./routes/api/fatLogs"));
-app.use("/api/tester", require("./routes/api/tester"));
-app.use("/api/healthData", require("./routes/api/healthData"));
-app.use("/api/form", require("./routes/api/form"));
-
-// Serve static assets (build folder) if in production
-if (process.env.NODE_ENV === "production") {
-  //Set static folder
-  app.use(express.static("client/build"));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+app.post("/api/form", (req, res) => {
+  let data = req.body;
+  let smtpTransport = nodemailer.createTransport({
+    service: "Gmail",
+    port: 465,
+    auth: {
+      user: "Gabehaus@gmail.com",
+      pass: "45654513a"
+    }
   });
-}
+
+  let mailOptions = {
+    from: data.email,
+    to: "Gabehaus@gmail.com",
+    subject: `Message from ${data.name}`,
+    html: `
+        
+        <h3>Information</h3>
+        <ul>
+        <li>Name: ${data.name}</li>
+        <li>Email: ${data.email}</li>
+        </ul>
+
+        <h3>Message</h3>
+        <p>${data.message}</p>
+
+        `
+  };
+
+  smtpTransport.sendMail(mailOptions, (error, response) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.send("Success");
+    }
+  });
+
+  smtpTransport.close();
+});
 
 const port = process.env.PORT || 5000;
 
