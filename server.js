@@ -10,11 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-{
-  /*app.get("/", () => {
-  console.log("welcome to my form");
-}); */
-}
+app.get("/", () => {
+  resizeBy.send("welcome to my form");
+});
 
 app.post("/api/form", (req, res) => {
   let data = req.body;
