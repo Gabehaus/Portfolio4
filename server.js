@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors());
 
-app.get("/", () => {
-  resizeBy.send("welcome to my form");
+app.get("/", (req, res) => {
+  res.send("welcome to my form");
 });
 
 app.post("/api/form", (req, res) => {
