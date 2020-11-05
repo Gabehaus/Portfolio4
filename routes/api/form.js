@@ -11,7 +11,7 @@ router.get("/", (req, res) => {});
 //@desc Create An Item
 // @access Private
 
-app.post("/api/form", (req, res) => {
+app.post("/form", (req, res) => {
   let data = req.body;
   let smtpTransport = nodemailer.createTransport({
     service: "Gmail",
