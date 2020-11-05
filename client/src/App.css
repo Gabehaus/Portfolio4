@@ -423,19 +423,19 @@ code {
   }
 
   .nameBox {
-    width: 20vw;
-    margin-left: 25vw;
+    width: 100vw;
+    margin-left: 0vw;
     height: 0vh;
-    margin-top: 10vw;
+    margin-top: 18vw;
     z-index: 5;
   }
 
   .nameBox-fadeOut {
-    width: 20vw;
+    width: 100vw;
 
-    margin-left: 25vw;
+    margin-left: 0vw;
     height: 0vh;
-    margin-top: 10vw;
+    margin-top: 8vw;
     z-index: 5;
     animation: opacOut 0.5s ease forwards 0s;
     display: none;
@@ -457,18 +457,20 @@ code {
 
   .name {
     width: 32vw;
-    margin-left: 9vw;
-    margin-top: 15vh;
+    margin-left: 50%;
+    margin-top: 0vh;
+    transform: translateX(-50%);
   }
 
   .fullStackDevBox {
     position: relative;
-
+    background: transparent;
     grid-row-start: 3;
     grid-row-end: 4;
+
     width: 100vw;
 
-    margin-top: 8vh;
+    margin-top: -20px;
   }
 
   .fullStackDevBox-fade-out {
@@ -478,7 +480,7 @@ code {
     grid-row-end: 4;
     width: 100vw;
 
-    margin-top: 8vh;
+    margin-top: -20px;
     animation: opacOut 0.5s ease forwards 0s;
 
     /*transition: opacity 15s;*/
@@ -2071,8 +2073,8 @@ code {
     enable-background: new 0 0 684.2 152.4;
     background: transparent;
     width: 64vw;
-    margin-left: 18vw;
-    margin-top: 19vh;
+    margin-left: 50% !important;
+    margin-top: 13vh;
   }
 
   .fullStackDevBox {
@@ -2082,7 +2084,7 @@ code {
     grid-row-end: 4;
     width: 100vw;
     background: transparent;
-    margin-top: 12vh;
+    margin-top: 8vh;
   }
 
   .fullStackDevBox-fade-out {
@@ -2092,7 +2094,7 @@ code {
     grid-row-end: 4;
     width: 100vw;
 
-    margin-top: 12vh;
+    margin-top: 8vh;
     animation: opacOut 0.5s ease forwards 0s;
   }
 
@@ -2101,7 +2103,7 @@ code {
     width: 50%;
     height: 60%;
     margin-left: 25%;
-    margin-top: 1vh;
+    margin-top: -18vh;
     opacity: 0;
     animation: linksIn 2s ease forwards 1s;
   }
@@ -4191,12 +4193,18 @@ code {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325 px) {
   .fullStackDevBox {
-    margin-top: 11vh;
+    margin-top: 5vh;
+    background: blue;
   }
 
   .fullStackDevBox-fade-out {
     margin-top: 9vh;
+  }
+
+  .fullstackDev {
+    margin-top: -30vh !important;
+    background: blue;
   }
 }

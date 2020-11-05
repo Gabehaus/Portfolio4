@@ -147,13 +147,6 @@ function Skyline(props) {
         </TransitionGroup>
       ) : null}
       <Name />
-      <div
-        className={
-          props.home.showName ? "fullStackDevBox" : "fullStackDevBox-fade-out"
-        }
-      >
-        <img src={fullStackDev} className="fullStackDev"></img>
-      </div>
       <NavLinks />
       <Links />
     </div> /* end of skyline */

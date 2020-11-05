@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
+import fullStackDev from "../images/fullStackDev.png";
+
 function Name(props) {
   return (
     <div className={props.home.showName ? "nameBox" : "nameBox-fadeOut"}>
@@ -291,6 +293,13 @@ function Name(props) {
           />
         </g>
       </svg>
+      <div
+        className={
+          props.home.showName ? "fullStackDevBox" : "fullStackDevBox-fade-out"
+        }
+      >
+        <img src={fullStackDev} className="fullStackDev"></img>
+      </div>
     </div>
   );
 }
