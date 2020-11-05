@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Provider } from "react-redux";
 import { data } from "./data/data";
 import Skyline from "./Components/Skyline.jsx";
-
+import Contact from "./Components/Contact.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/cyborg/bootstrap.css";
 import "./App.css";
@@ -68,7 +68,7 @@ function App(props) {
     <Provider store={store}>
       <BrowserRouter>
         <Route exact path="/" component={Skyline} />
-
+        <Route exact path="/contact" component={Contact} />
         {/* end of app */}
       </BrowserRouter>
     </Provider>
