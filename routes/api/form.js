@@ -11,32 +11,32 @@ router.get("/", (req, res) => {});
 //@desc Create An Item
 // @access Private
 
-app.post("/", (req, res) => {
+router.post("/", (req, res) => {
   let data = req.body;
+
   let smtpTransport = nodemailer.createTransport({
     service: "Gmail",
     port: 465,
     auth: {
-      user: "Gabehaus@gmail.com",
-      pass: "45654513a"
+      user: "FatHacker3030@gmail.com",
+      pass: "45654513aB$"
     }
   });
 
   let mailOptions = {
     from: data.email,
-    to: "Gabehaus@gmail.com",
-    subject: `Message from ${data.name}`,
+    to: "FatHacker3030@gmail.com",
+    subject: `Message from ${data.email}`,
     html: `
         
         <h3>Information</h3>
         <ul>
-        <li>Name: ${data.name}</li>
-        <li>Email: ${data.email}</li>
-        </ul>
-
-        <h3>Message</h3>
-        <p>${data.message}</p>
-
+        
+          <li>Email: ${data.email}</li>
+        
+        </ul> 
+        
+        
         `
   };
 
@@ -46,9 +46,9 @@ app.post("/", (req, res) => {
     } else {
       res.send("Success");
     }
-  });
 
-  smtpTransport.close();
+    smtpTransport.close();
+  });
 });
 
 // @route DELETC api/items/:id
