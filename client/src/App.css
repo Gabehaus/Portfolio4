@@ -208,12 +208,12 @@ code {
     margin-left: 70px;
     margin-right: 70px;
     background: transparent;
-    animation: linksFontSize 0.5s ease forwards 4.55s;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    animation: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
   }
 
   @-webkit-keyframes linksFontSize {
