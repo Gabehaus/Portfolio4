@@ -2100,21 +2100,20 @@ code {
   }
 
   .name {
+    position: absolute;
     enable-background: new 0 0 684.2 152.4;
     background: transparent;
-    width: 64vw;
+    width: 100vw !important;
     margin-left: 50% !important;
     margin-top: 13vh;
   }
 
   .fullStackDevBox {
-    position: relative;
+    position: absolute;
 
-    grid-row-start: 3;
-    grid-row-end: 4;
     width: 100vw;
     background: transparent;
-    margin-top: 8vh;
+    top: 14vw;
   }
 
   .fullStackDevBox-fade-out {
@@ -2139,7 +2138,7 @@ code {
   }
 
   .cloudsBox {
-    width: 100%;
+    width: 100vw;
     background: transparent;
     margin-left: 0;
     height: 100vh;
@@ -2339,7 +2338,8 @@ code {
         scale(1);
     }
     100% {
-      -webkit-transform: rotate(360deg) translateX(210px) rotate(-360deg);
+      -webkit-transform: rotate(360deg) translateX(210px) rotate(-360deg)
+        scale(1);
     }
   }
 
@@ -2354,7 +2354,7 @@ code {
       -moz-transform: rotate(180deg) translateX(210px) rotate(-180deg) scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translateX(210px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translateX(210px) rotate(-360deg) scale(1);
     }
   }
 
@@ -2369,7 +2369,7 @@ code {
       -o-transform: rotate(180deg) translateX(210px) rotate(-180deg) scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translateX(210px) rotate(-360deg);
+      -o-transform: rotate(360deg) translateX(210px) rotate(-360deg) scale(1);
     }
   }
 
@@ -2384,7 +2384,7 @@ code {
       transform: rotate(180deg) translateX(210px) rotate(-180deg) scale(1);
     }
     100% {
-      transform: rotate(360deg) translateX(210px) rotate(-360deg);
+      transform: rotate(360deg) translateX(210px) rotate(-360deg) scale(1);
     }
   }
 
@@ -2420,7 +2420,7 @@ code {
  */
   @-webkit-keyframes myOrbit2 {
     0% {
-      -webkit-transform: rotate(0deg) translateX(-210px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translateX(-210px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -2439,7 +2439,7 @@ code {
 
   @-moz-keyframes myOrbit2 {
     0% {
-      -moz-transform: rotate(0deg) translateX(-210px) rotate(0deg);
+      -moz-transform: rotate(0deg) translateX(-210px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -2455,7 +2455,7 @@ code {
 
   @-o-keyframes myOrbit2 {
     0% {
-      -o-transform: rotate(0deg) translateX(-210px) rotate(0deg);
+      -o-transform: rotate(0deg) translateX(-210px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -2471,7 +2471,7 @@ code {
 
   @keyframes myOrbit2 {
     0% {
-      transform: rotate(0deg) translateX(-210px) rotate(0deg);
+      transform: rotate(0deg) translateX(-210px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -2634,7 +2634,8 @@ code {
  */
   @-webkit-keyframes myOrbit4 {
     0% {
-      -webkit-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg)
+        scale(1);
     }
     37.5% {
       -webkit-transform: rotate(135deg) translate(-149px, -149px)
@@ -2650,13 +2651,14 @@ code {
     }
     100% {
       -webkit-transform: rotate(360deg) translate(-149px, -149px)
-        rotate(-360deg);
+        rotate(-360deg) scale(1);
     }
   }
 
   @-moz-keyframes myOrbit4 {
     0% {
-      -moz-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg);
+      -moz-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg)
+        scale(1);
     }
     37.5% {
       -moz-transform: rotate(135deg) translate(-149px, -149px) rotate(-135deg)
@@ -2671,13 +2673,14 @@ code {
         scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-o-keyframes myOrbit4 {
     0% {
-      -o-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg);
+      -o-transform: rotate(0deg) translate(-149px, -149px) rotate(0deg) scale(1);
     }
     37.5% {
       -o-transform: rotate(135deg) translate(-149px, -149px) rotate(-135deg)
@@ -2692,13 +2695,14 @@ code {
         scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg);
+      -o-transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @keyframes myOrbit4 {
     0% {
-      transform: rotate(0deg) translate(-149px, -149px) rotate(0deg);
+      transform: rotate(0deg) translate(-149px, -149px) rotate(0deg) scale(1);
     }
     37.5% {
       transform: rotate(135deg) translate(-149px, -149px) rotate(-135deg)
@@ -2713,7 +2717,8 @@ code {
         scale(1);
     }
     100% {
-      transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg);
+      transform: rotate(360deg) translate(-149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
@@ -3075,7 +3080,8 @@ code {
  */
   @-webkit-keyframes myOrbit8 {
     0% {
-      -webkit-transform: rotate(0deg) translate(149px, -149px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translate(149px, -149px) rotate(0deg)
+        scale(1);
     }
     12.5% {
       -webkit-transform: rotate(45deg) translate(149px, -149px) rotate(-45deg)
@@ -3090,13 +3096,15 @@ code {
         scale(1);
     }
     100% {
-      -webkit-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg);
+      -webkit-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-moz-keyframes myOrbit8 {
     0% {
-      -moz-transform: rotate(0deg) translate(149px, -149px) rotate(0deg);
+      -moz-transform: rotate(0deg) translate(149px, -149px) rotate(0deg)
+        scale(1);
     }
     12.5% {
       -moz-transform: rotate(45deg) translate(149px, -149px) rotate(-45deg)
@@ -3111,13 +3119,14 @@ code {
         scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-o-keyframes myOrbit8 {
     0% {
-      -o-transform: rotate(0deg) translate(149px, -149px) rotate(0deg);
+      -o-transform: rotate(0deg) translate(149px, -149px) rotate(0deg) scale(1);
     }
     12.5% {
       -o-transform: rotate(45deg) translate(149px, -149px) rotate(-45deg)
@@ -3132,13 +3141,14 @@ code {
         scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg);
+      -o-transform: rotate(360deg) translate(149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @keyframes myOrbit8 {
     0% {
-      transform: rotate(0deg) translate(149px, -149px) rotate(0deg);
+      transform: rotate(0deg) translate(149px, -149px) rotate(0deg) scale(1);
     }
     12.5% {
       transform: rotate(45deg) translate(149px, -149px) rotate(-45deg) scale(1);
@@ -3152,7 +3162,8 @@ code {
         scale(1);
     }
     100% {
-      transform: rotate(360deg) translate(149px, -149px) rotate(-360deg);
+      transform: rotate(360deg) translate(149px, -149px) rotate(-360deg)
+        scale(1);
     }
   }
 
@@ -3193,6 +3204,23 @@ code {
     top: 25vh;
     z-index: 2 !important;
   }
+
+  .link {
+    animation: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  .skyline {
+    width: 100vw !important;
+    position: absolute;
+    background: blue !important;
+    height: 100vh !important;
+    left: 0vw;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3201,8 +3229,10 @@ code {
   }
 
   .name {
-    width: 80vw;
-    margin-left: 10vw;
+    position: absolute;
+    width: 80vw !important;
+    top: 23.5vh;
+    background: transparent;
   }
 
   .fullStackDevBox-fade-out {
@@ -3415,7 +3445,8 @@ code {
         scale(1);
     }
     100% {
-      -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg);
+      -webkit-transform: rotate(360deg) translateX(120px) rotate(-360deg)
+        scale(1);
     }
   }
 
@@ -3430,7 +3461,7 @@ code {
       -moz-transform: rotate(180deg) translateX(120px) rotate(-180deg) scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translateX(120px) rotate(-360deg) scale(1);
     }
   }
 
@@ -3445,7 +3476,7 @@ code {
       -o-transform: rotate(180deg) translateX(120px) rotate(-180deg) scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translateX(120px) rotate(-360deg);
+      -o-transform: rotate(360deg) translateX(120px) rotate(-360deg) scale(1);
     }
   }
 
@@ -3460,7 +3491,7 @@ code {
       transform: rotate(180deg) translateX(120px) rotate(-180deg) scale(1);
     }
     100% {
-      transform: rotate(360deg) translateX(120px) rotate(-360deg);
+      transform: rotate(360deg) translateX(120px) rotate(-360deg) scale(1);
     }
   }
 
@@ -3496,7 +3527,7 @@ code {
   */
   @-webkit-keyframes myOrbit2 {
     0% {
-      -webkit-transform: rotate(0deg) translateX(-120px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translateX(-120px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -3515,7 +3546,7 @@ code {
 
   @-moz-keyframes myOrbit2 {
     0% {
-      -moz-transform: rotate(0deg) translateX(-120px) rotate(0deg);
+      -moz-transform: rotate(0deg) translateX(-120px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -3531,7 +3562,7 @@ code {
 
   @-o-keyframes myOrbit2 {
     0% {
-      -o-transform: rotate(0deg) translateX(-120px) rotate(0deg);
+      -o-transform: rotate(0deg) translateX(-120px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -3547,7 +3578,7 @@ code {
 
   @keyframes myOrbit2 {
     0% {
-      transform: rotate(0deg) translateX(-120px) rotate(0deg);
+      transform: rotate(0deg) translateX(-120px) rotate(0deg) scale(1);
     }
 
     50% {
@@ -3707,7 +3738,8 @@ code {
   */
   @-webkit-keyframes myOrbit4 {
     0% {
-      -webkit-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg)
+        scale(1);
     }
     37.5% {
       -webkit-transform: rotate(135deg) translate(-85px, -85px) rotate(-135deg)
@@ -3722,13 +3754,14 @@ code {
         scale(1);
     }
     100% {
-      -webkit-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg);
+      -webkit-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-moz-keyframes myOrbit4 {
     0% {
-      -moz-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg);
+      -moz-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg) scale(1);
     }
     37.5% {
       -moz-transform: rotate(135deg) translate(-85px, -85px) rotate(-135deg)
@@ -3743,13 +3776,14 @@ code {
         scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-o-keyframes myOrbit4 {
     0% {
-      -o-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg);
+      -o-transform: rotate(0deg) translate(-85px, -85px) rotate(0deg) scale(1);
     }
     37.5% {
       -o-transform: rotate(135deg) translate(-85px, -85px) rotate(-135deg)
@@ -3764,13 +3798,14 @@ code {
         scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg);
+      -o-transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @keyframes myOrbit4 {
     0% {
-      transform: rotate(0deg) translate(-85px, -85px) rotate(0deg);
+      transform: rotate(0deg) translate(-85px, -85px) rotate(0deg) scale(1);
     }
     37.5% {
       transform: rotate(135deg) translate(-85px, -85px) rotate(-135deg) scale(1);
@@ -3782,7 +3817,7 @@ code {
       transform: rotate(315deg) translate(-85px, -85px) rotate(-315deg) scale(1);
     }
     100% {
-      transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg);
+      transform: rotate(360deg) translate(-85px, -85px) rotate(-360deg) scale(1);
     }
   }
 
@@ -4140,7 +4175,8 @@ code {
   */
   @-webkit-keyframes myOrbit8 {
     0% {
-      -webkit-transform: rotate(0deg) translate(85px, -85px) rotate(0deg);
+      -webkit-transform: rotate(0deg) translate(85px, -85px) rotate(0deg)
+        scale(1);
     }
     12.5% {
       -webkit-transform: rotate(45deg) translate(85px, -85px) rotate(-45deg)
@@ -4155,13 +4191,14 @@ code {
         scale(1);
     }
     100% {
-      -webkit-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg);
+      -webkit-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-moz-keyframes myOrbit8 {
     0% {
-      -moz-transform: rotate(0deg) translate(85px, -85px) rotate(0deg);
+      -moz-transform: rotate(0deg) translate(85px, -85px) rotate(0deg) scale(1);
     }
     12.5% {
       -moz-transform: rotate(45deg) translate(85px, -85px) rotate(-45deg)
@@ -4176,13 +4213,14 @@ code {
         scale(1);
     }
     100% {
-      -moz-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @-o-keyframes myOrbit8 {
     0% {
-      -o-transform: rotate(0deg) translate(85px, -85px) rotate(0deg);
+      -o-transform: rotate(0deg) translate(85px, -85px) rotate(0deg) scale(1);
     }
     12.5% {
       -o-transform: rotate(45deg) translate(85px, -85px) rotate(-45deg) scale(1);
@@ -4196,13 +4234,14 @@ code {
         scale(1);
     }
     100% {
-      -o-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg);
+      -o-transform: rotate(360deg) translate(85px, -85px) rotate(-360deg)
+        scale(1);
     }
   }
 
   @keyframes myOrbit8 {
     0% {
-      transform: rotate(0deg) translate(85px, -85px) rotate(0deg);
+      transform: rotate(0deg) translate(85px, -85px) rotate(0deg) scale(1);
     }
     12.5% {
       transform: rotate(45deg) translate(85px, -85px) rotate(-45deg) scale(1);
@@ -4214,8 +4253,17 @@ code {
       transform: rotate(225deg) translate(85px, -85px) rotate(-225deg) scale(1);
     }
     100% {
-      transform: rotate(360deg) translate(85px, -85px) rotate(-360deg);
+      transform: rotate(360deg) translate(85px, -85px) rotate(-360deg) scale(1);
     }
+  }
+
+  .link {
+    animation: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
   }
 }
 
@@ -4229,8 +4277,10 @@ code {
   }
 
   .name {
-    width: 80vw;
-    margin-left: 10vw;
+    position: absolute;
+    width: 80vw !important;
+    top: 26.5vh;
+    background: transparent;
   }
 
   .fullStackDevBox {
