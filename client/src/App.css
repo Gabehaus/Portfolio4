@@ -208,12 +208,12 @@ code {
     margin-left: 70px;
     margin-right: 70px;
     background: transparent;
-    animation: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
+    animation: linksFontSize 0.5s ease forwards 4.55s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   @-webkit-keyframes linksFontSize {
@@ -2060,7 +2060,12 @@ code {
     margin-right: 9vw;
     margin-top: 10vh;
     background: transparent;
-    animation: none !important;
+    animation: linksFontSize 0.5s ease forwards 4.55s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   @keyframes linksFontSize {
@@ -3217,14 +3222,8 @@ code {
     left: 0vw;
   }
 
-  .link:hover {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
+  .linkButton {
+    animation: none !important;
   }
 }
 
@@ -4313,16 +4312,6 @@ code {
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
-  }
-
-  .link:hover {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
   }
 }
 
