@@ -73,7 +73,7 @@ function Skyline(props) {
       {/* start of projects modal */}
       <div className={props.home.showPort ? "fade-port-in" : "fade-port-out"}>
         <button
-          className="exit-button"
+          className="exit-button2"
           onClick={() => {
             props.showLinks();
             props.showPort();
