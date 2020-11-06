@@ -3206,18 +3206,18 @@ code {
   }
 
   .link {
-    animation: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
+    animation: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
 
   .skyline {
     width: 100vw !important;
     position: absolute;
-    background: blue !important;
+    background: transparent !important;
     height: 100vh !important;
     left: 0vw;
   }
@@ -3286,7 +3286,7 @@ code {
   }
 
   .app-link {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 20px;
   }
 
@@ -3304,7 +3304,7 @@ code {
   }
 
   .notes-list {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .slides {
@@ -4258,12 +4258,12 @@ code {
   }
 
   .link {
-    animation: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
+    animation: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
 }
 
@@ -4300,6 +4300,15 @@ code {
   .app-title {
     font-size: 4vw;
   }
+
+  .link {
+    animation: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
 }
 
 @media (max-width: 325 px) {
@@ -4313,6 +4322,6 @@ code {
 
   .fullstackDev {
     margin-top: -30vh !important;
-    background: blue;
+    background: transparent;
   }
 }
