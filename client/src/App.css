@@ -3224,6 +3224,7 @@ code {
 
   .linkButton {
     animation: none !important;
+    transition: none !important;
   }
 
   @-webkit-keyframes linksFontSize {
@@ -3247,6 +3248,17 @@ code {
     100% {
       font-size: 60px;
     }
+  }
+
+  .link:hover {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    animation: none !important;
   }
 }
 
