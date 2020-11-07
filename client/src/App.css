@@ -3225,6 +3225,29 @@ code {
   .linkButton {
     animation: none !important;
   }
+
+  @-webkit-keyframes linksFontSize {
+    0% {
+      font-size: 60px;
+    }
+    50% {
+      font-size: 60px;
+    }
+    100% {
+      font-size: 60px;
+    }
+  }
+  @keyframes linksFontSize {
+    0% {
+      font-size: 60px;
+    }
+    50% {
+      font-size: 60px;
+    }
+    100% {
+      font-size: 60px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
