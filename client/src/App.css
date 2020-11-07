@@ -577,6 +577,7 @@ code {
     font-size: 20px;
     z-index: 9;
     opacity: 0.6;
+    font-family: "Poppins", "Arial";
   }
 
   .exit-button2 {
@@ -3288,7 +3289,7 @@ code {
   }
 
   .exit-button {
-    left: 60%;
+    left: 87%;
     top: 5vh;
     margin: 0;
     width: 30px;
