@@ -570,8 +570,8 @@ code {
     border-radius: 3px;
     border-style: none;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     top: 4vh;
     left: 90%;
     font-size: 20px;
@@ -582,6 +582,7 @@ code {
   .exit-button2 {
     background: white;
     color: #0d0d0d;
+    left: 85%;
   }
 
   .next-button {
@@ -3287,7 +3288,11 @@ code {
   }
 
   .exit-button {
-    left: 93%;
+    left: 87%;
+    top: 5vh;
+    margin: 0;
+    width: 30px;
+    height: 30px;
   }
 
   .notes-box {
@@ -3429,6 +3434,10 @@ code {
     margin-left: -25px;
   }
 
+  .skillsBox-fadeIn {
+    background: transparent;
+  }
+
   .centerLogoBox {
     width: 100vw;
     height: 120px;
@@ -3437,7 +3446,7 @@ code {
   .centerLogo {
     width: 90px;
     height: 80px;
-    margin-top: 130px;
+    margin-top: 70px;
     margin-left: 0px;
   }
 
@@ -3452,7 +3461,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -3544,7 +3553,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -3641,7 +3650,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -3755,7 +3764,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -3870,7 +3879,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -3962,7 +3971,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -4078,7 +4087,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -4192,7 +4201,7 @@ code {
      */
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -50px;
 
     /*
      * Sets up the animation duration, timing-function (or easing)
@@ -4377,17 +4386,28 @@ code {
   }
 }
 
-@media (max-width: 325 px) {
+@media (max-width: 325px) {
   .fullStackDevBox {
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
 
   .fullStackDevBox-fade-out {
-    margin-top: 9vh;
+    margin-top: 1vh;
   }
 
   .fullstackDev {
-    margin-top: -30vh !important;
+    margin-top: -18vh !important;
     background: transparent;
+  }
+
+  .linkButton {
+    font-size: 30px;
+  }
+
+  .fade-accounts-in {
+  }
+
+  .account-holder {
+    margin-top: 5vh;
   }
 }
