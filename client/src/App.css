@@ -2105,7 +2105,7 @@ code {
     background: transparent;
     width: 100vw !important;
     margin-left: 50% !important;
-    margin-top: 13vh;
+    margin-top: 16vh;
   }
 
   .fullStackDevBox {
@@ -3264,18 +3264,18 @@ code {
 
 @media (max-width: 576px) {
   .fullStackDevBox {
-    margin-top: 9vh;
+    margin-top: 0vh;
   }
 
   .name {
     position: absolute;
     width: 80vw !important;
-    top: 23.5vh;
+    top: 10vh;
     background: transparent;
   }
 
   .fullStackDevBox-fade-out {
-    margin-top: 9vh;
+    margin-top: 0vh;
   }
 
   .nameBox {
@@ -3362,7 +3362,7 @@ code {
     grid-column-start: 1;
     grid-column-end: 6;
 
-    margin-top: -9vh;
+    margin-top: -14vh;
   }
 
   .fullStackDev {
@@ -3405,7 +3405,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -15vh;
+    margin-top: -45vh;
     background: transparent;
     opacity: 0;
     animation: linksIn 2s ease forwards 1s;
@@ -4296,19 +4296,37 @@ code {
     }
   }
 
-  .link {
+  .linkButton {
     animation: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
+
+    font-size: 40px !important;
+    transform: scale(1);
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .link {
+    background: transparent;
+    width: 17vw;
+    margin: 0;
+    margin-left: 1vw;
+  }
+
+  .fade-links-in {
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent;
   }
 }
 
 @media (max-width: 380px) and (min-height: 800px) {
   .nameBox {
-    margin-top: 12vh;
+    margin-top: 8vh;
   }
 
   .nameBox-fadeOut {
@@ -4318,12 +4336,12 @@ code {
   .name {
     position: absolute;
     width: 80vw !important;
-    top: 26.5vh;
+    top: 12vh;
     background: transparent;
   }
 
   .fullStackDevBox {
-    margin-top: 11vh;
+    margin-top: 1vh;
   }
 
   .app-link,
@@ -4347,6 +4365,15 @@ code {
     -ms-transition: none !important;
     -o-transition: none !important;
     transition: none !important;
+  }
+
+  .fade-links-in {
+    background: transparent;
+    top: 0vh;
+  }
+
+  .fade-accounts-in {
+    margin-top: -50vh;
   }
 }
 
