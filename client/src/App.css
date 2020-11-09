@@ -47,10 +47,10 @@ code {
 
   .cloudsBox {
     position: absolute;
-    width: 36vw;
+    width: 42vw;
     height: 100vh;
     background: transparent;
-    margin-left: 32vw;
+    margin-left: 29vw;
   }
 
   .clouds-fade-in {
